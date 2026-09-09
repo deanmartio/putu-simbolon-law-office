@@ -16,7 +16,7 @@
   --radius: 2px;
   --shadow: 0 10px 30px -12px rgba(16, 24, 43, 0.18);
   --serif: "Source Serif 4", "Georgia", serif;
-  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --sans: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -71,6 +71,16 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   display: block;
 }
 
+/* Longer descriptive lines read poorly in full caps — keep the label
+   feel via italic + letter-spacing instead of uppercase. */
+.eyebrow.tagline {
+  text-transform: none;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  font-size: 0.9rem;
+}
+
 .lede {
   font-size: 1.15rem;
   color: var(--ink-soft);
@@ -115,9 +125,9 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   display: block;
   font-family: var(--sans);
   font-weight: 500;
-  font-size: 0.62rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-style: italic;
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
   color: var(--accent);
   margin-top: 2px;
   overflow: hidden;
@@ -429,9 +439,8 @@ section.block.alt + section.block.alt { border-top: none; }
 }
 .practice-item .specialization {
   margin-top: 14px;
-  padding: 16px 20px;
+  padding: 18px 22px;
   background: var(--accent-bg);
-  border-left: 3px solid var(--accent-soft);
   border-radius: var(--radius);
 }
 .practice-item .specialization p { margin: 0; font-size: 0.94rem; }
@@ -465,17 +474,28 @@ section.block.alt + section.block.alt { border-top: none; }
 
 .philosophy {
   margin-top: 24px;
-  padding: 22px 26px;
-  border-left: 3px solid var(--accent-soft);
+  padding: 26px 28px;
   background: var(--accent-bg);
   border-radius: var(--radius);
 }
 .philosophy .quote {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 1.08rem;
+  font-size: 1.2rem;
   color: var(--ink);
-  margin: 0 0 6px;
+  margin: 0 0 8px;
+  position: relative;
+  padding-left: 0.9em;
+}
+.philosophy .quote::before {
+  content: "\201C";
+  font-style: normal;
+  color: var(--accent-soft);
+  font-size: 1.4em;
+  position: absolute;
+  left: -0.15em;
+  top: 0.08em;
+  line-height: 1;
 }
 .philosophy p:last-child { margin: 0; font-size: 0.9rem; color: var(--ink-soft); }
 
