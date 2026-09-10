@@ -1,4 +1,4 @@
-/* Putu Simbolon Law Office — stylesheet */
+/* Putu Simbolon Law Office stylesheet */
 
 :root {
   --ink: #10182B;
@@ -83,7 +83,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   display: block;
 }
 
-/* Longer descriptive lines read poorly in full caps — keep the label
+/* Longer descriptive lines read poorly in full caps. Keep the label
    feel via italic + letter-spacing instead of uppercase. */
 .eyebrow.tagline {
   text-transform: none;
@@ -368,7 +368,7 @@ section.block.alt + section.block.alt { border-top: none; }
 }
 .card p { margin: 0; font-size: 0.95rem; }
 
-/* Icons — thin-line, monochrome, sitting in flow next to a heading
+/* Icons: thin-line, monochrome, sitting in flow next to a heading
    rather than stacked above it in their own tile. */
 .icon {
   width: 22px;

@@ -1,4 +1,4 @@
-// Putu Simbolon Law Office — shared behavior
+// Putu Simbolon Law Office: shared behavior
 
 document.addEventListener("DOMContentLoaded", function () {
   // Mobile nav toggle
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Contact Us dropdown — supports multiple instances per page
+  // Contact Us dropdown, supports multiple instances per page
   var contacts = document.querySelectorAll(".contact");
   contacts.forEach(function (el) {
     var toggle = el.querySelector(".contact-toggle");
