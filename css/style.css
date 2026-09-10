@@ -438,6 +438,11 @@ section.block.alt + section.block.alt { border-top: none; }
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 32px;
 }
+.why-grid.why-grid-stacked {
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
 .why-item h3 {
   font-family: var(--serif);
   text-transform: none;
