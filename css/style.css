@@ -368,6 +368,33 @@ section.block.alt + section.block.alt { border-top: none; }
 }
 .card p { margin: 0; font-size: 0.95rem; }
 
+/* Icons — thin-line, monochrome, used sparingly as small badges rather
+   than decoration. Keeps the tone editorial, not app-like. */
+.icon {
+  width: 22px;
+  height: 22px;
+  stroke-width: 1.6;
+  display: block;
+}
+.icon-badge {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-bg);
+  color: var(--accent);
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+}
+.icon-badge .icon { width: 20px; height: 20px; }
+
+.icon-inline {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.icon-inline .icon { width: 20px; height: 20px; }
+
 /* Highlight strip ("Recognized for Rigor") */
 
 .highlight-strip {
