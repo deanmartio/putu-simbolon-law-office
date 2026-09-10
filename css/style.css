@@ -506,6 +506,10 @@ section.block.alt + section.block.alt { border-top: none; }
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
+.founder-media.framed img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
 .founder-media figcaption {
   margin-top: 10px;
   font-size: 0.78rem;

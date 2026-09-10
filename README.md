@@ -13,14 +13,14 @@ Static site (plain HTML/CSS/JS, no build step) for Putu Simbolon Law Office.
 - `images/`: site photography
 - `favicon-32.png`, `favicon-180.png`, `favicon-512.png`: site favicon
 
-## Before launch
+## Contact details
 
-Replace the placeholder contact details used throughout the site:
+The "Contact Us" dropdown on every page links to:
 
-- WhatsApp link: `https://wa.me/62812XXXXXXX` (in every `.contact-panel`)
-- Email link: `mailto:info@putusimbolonlaw.com` (in every `.contact-panel`)
+- WhatsApp: `https://wa.me/6281139999789`
+- Email: `mailto:c.simbolon9@gmail.com`
 
-Search-and-replace across all four `.html` files.
+To change either, search and replace across all four `.html` files.
 
 ## Local preview
 
