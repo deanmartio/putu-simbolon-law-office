@@ -368,32 +368,42 @@ section.block.alt + section.block.alt { border-top: none; }
 }
 .card p { margin: 0; font-size: 0.95rem; }
 
-/* Icons — thin-line, monochrome, used sparingly as small badges rather
-   than decoration. Keeps the tone editorial, not app-like. */
+/* Icons — thin-line, monochrome, sitting in flow next to a heading
+   rather than stacked above it in their own tile. */
 .icon {
   width: 22px;
   height: 22px;
   stroke-width: 1.6;
   display: block;
 }
-.icon-badge {
-  width: 42px;
-  height: 42px;
+
+.card-head {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: var(--accent-bg);
-  color: var(--accent);
-  border-radius: var(--radius);
-  margin-bottom: 16px;
-}
-.icon-badge .icon { width: 20px; height: 20px; }
-
-.icon-inline {
-  color: var(--accent);
+  gap: 10px;
   margin-bottom: 10px;
 }
-.icon-inline .icon { width: 20px; height: 20px; }
+.card-head .icon {
+  width: 19px;
+  height: 19px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.card .card-head h3, .why-item .card-head h3 { margin: 0; }
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.stat-row .icon {
+  width: 17px;
+  height: 17px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.highlight-item .stat-row .stat { margin: 0; }
 
 /* Highlight strip ("Recognized for Rigor") */
 
